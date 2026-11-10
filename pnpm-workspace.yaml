@@ -1,0 +1,9 @@
+# Tells pnpm which folders hold the projects of this repository.
+#
+#   apps/*      programs we run or publish (API, mobile app, the two websites)
+#   packages/*  code shared by the apps
+#
+# A folder only counts as a project once it contains its own package.json.
+packages:
+  - "apps/*"
+  - "packages/*"

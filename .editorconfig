@@ -1,0 +1,17 @@
+# Editor settings shared by the whole team. https://editorconfig.org
+# VS Code needs the "EditorConfig for VS Code" extension to read this file.
+# VS Code offers to install it when you open this folder.
+
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+indent_style = space
+indent_size = 2
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# In Markdown, two spaces at the end of a line mean "line break". Keep them.
+[*.md]
+trim_trailing_whitespace = false

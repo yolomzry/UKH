@@ -1,0 +1,24 @@
+# Line endings.
+#
+# Windows ends a line with two invisible characters (CRLF), macOS and Linux with
+# one (LF). A team that mixes the two gets files that look "changed" when nobody
+# touched them. This line makes Git store and check out text files with LF on
+# every computer.
+* text=auto eol=lf
+
+# Windows command scripts are the exception: they need CRLF to run.
+*.cmd text eol=crlf
+*.bat text eol=crlf
+
+# Binary files. Git must never try to change line endings inside these.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.pdf binary
+*.ttf binary
+*.otf binary
+*.woff binary
+*.woff2 binary

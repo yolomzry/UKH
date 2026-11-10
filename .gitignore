@@ -1,0 +1,40 @@
+# Files Git must NOT store. One pattern per line.
+
+# Libraries downloaded by pnpm. Recreated by "pnpm install".
+node_modules/
+
+# Output created by build tools. Recreated by building.
+dist/
+build/
+out/
+.next/
+.expo/
+.turbo/
+coverage/
+*.tsbuildinfo
+
+# Secrets and machine-specific settings. These never go into Git.
+# ".env.example" is the exception: it lists the setting names without the values.
+.env
+.env.*
+!.env.example
+
+# Log files.
+*.log
+
+# Lockfiles of other package managers. This project uses pnpm (pnpm-lock.yaml).
+package-lock.json
+yarn.lock
+bun.lock
+bun.lockb
+
+# Files created by operating systems and editors.
+.DS_Store
+Thumbs.db
+.idea/
+*.swp
+
+# VS Code: share only the two team files, ignore everything personal.
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
